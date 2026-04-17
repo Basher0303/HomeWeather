@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build / generated files
+/dist
+/build
+
+# GNOME Extension
+gnome-extension/schemas/*.gschema.compiled
+gnome-extension/*.lock
+
+# Temporary files
+*.tmp
+*.temp
+.*.swp
+
+# Arduino / NodeMCU
+nodeMCU/*.bin
+nodeMCU/*.elf
+nodeMCU/*.hex
+nodeMCU/*.log

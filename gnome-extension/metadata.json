@@ -1,0 +1,9 @@
+{
+    "uuid": "home-weather@basher.com",
+    "name": "HomeWeather",
+    "description": "Simple home weather extension",
+    "version": 3,
+    "shell-version": ["42", "43", "44", "45"],
+    "main": "extension.js",
+    "settings-schema": "org.gnome.shell.extensions.home-weather"
+}
