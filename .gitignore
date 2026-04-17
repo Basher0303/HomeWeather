@@ -1,3 +1,6 @@
+#build
+deploy.config.sh
+
 # Node.js
 node_modules/
 npm-debug.log*
