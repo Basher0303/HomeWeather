@@ -84,6 +84,7 @@ if should_deploy "backend"; then
         else
             pm2 start ecosystem.config.js
         fi
+        pm2 save
     " && success "Бэкенд запущен"
 fi
 section "Деплой завершён"
