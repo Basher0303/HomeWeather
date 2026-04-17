@@ -18,6 +18,9 @@ yarn.lock
 .DS_Store
 Thumbs.db
 
+# Database
+backend/src/db/db.json
+
 # Logs
 *.log
 

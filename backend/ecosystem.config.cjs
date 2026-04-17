@@ -8,7 +8,7 @@ module.exports = {
             name: "weather-backend",
 
             // Точка входа (главный файл приложения)
-            script: "index.js",
+            script: "src/index.js",
 
             // Рабочая директория (откуда запускать приложение)
             cwd: "./",

@@ -71,7 +71,8 @@ if should_deploy "backend"; then
         --rsync-path="mkdir -p $PROJECT_DIR/backend && rsync" \
         ./backend/ \
         "$SSH_USER@$SERVER_IP:$PROJECT_DIR/backend/" \
-        --exclude='node_modules' && success "Бэкенд скопирован"
+        --exclude='node_modules' \
+        --exclude='src/db/db.json' && success "Бэкенд скопирован"
 
     ssh -i $SSH_KEY -p $SSH_PORT $SSH_USER@$SERVER_IP "
         export NVM_DIR=\$HOME/.nvm && \
@@ -82,7 +83,7 @@ if should_deploy "backend"; then
         if pm2 describe backend-weather > /dev/null 2>&1; then
             pm2 reload backend-weather
         else
-            pm2 start ecosystem.config.js
+            pm2 start ecosystem.config.cjs
         fi
         pm2 save
     " && success "Бэкенд запущен"
